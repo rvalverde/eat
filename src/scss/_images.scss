@@ -1,0 +1,114 @@
+[class^='img-']::after,
+[class*=' img-']::after,
+[class^='img-'],
+[class*=' img-'] {
+  background-image: url('#{$images-path}/img.svg');
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+[class^='img-'],
+[class*=' img-'] {
+  display: inline-block;
+  flex-shrink: 0;
+  height: 75px;
+  position: relative;
+  transition: background-position 0.25s linear;
+  width: 80px;
+
+  &::after {
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.45s;
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+      transition: opacity 0.45s;
+    }
+  }
+}
+
+.img {
+  &-monitoring,
+  &-receives,
+  &-search,
+  &-selection,
+  &-user {
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 72px;
+    width: 72px;
+  }
+
+  &-monitoring {
+    background-image: url('#{$images-path}/icons/how-monitoring.svg');
+  }
+
+  &-receives {
+    background-image: url('#{$images-path}/icons/how-receives.svg');
+  }
+
+  &-search {
+    background-image: url('#{$images-path}/icons/how-search.svg');
+  }
+
+  &-selection {
+    background-image: url('#{$images-path}/icons/how-selection.svg');
+  }
+
+  &-user {
+    background-image: url('#{$images-path}/icons/how-user.svg');
+  }
+
+  &-menu {
+    background-position: 0 -80px;
+    height: 24px;
+    width: 24px;
+  }
+
+  &-apple,
+  &-android {
+    background-position: 0 -236px;
+    height: 46px;
+    width: 147px;
+
+    &::after {
+      background-position: 0 -287px;
+      content: '';
+    }
+  }
+
+  &-android {
+    background-position: -152px -236px;
+
+    &::after {
+      background-position: -152px -287px;
+    }
+  }
+
+  &-apple-small,
+  &-android-small {
+    background-position: 0 -160px;
+    height: 33px;
+    width: 105px;
+
+    &::after {
+      background-position: 0 -198px;
+      content: '';
+    }
+  }
+
+  &-android-small {
+    background-position: -110px -160px;
+
+    &::after {
+      background-position: -110px -198px;
+    }
+  }
+}

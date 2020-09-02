@@ -1,0 +1,64 @@
+-
+  const sliders = [
+    {
+      'title': 'Pide tu plato favorito <br> y elige entre “Delivery” <br> o “Paso a Recogerlo”.',
+      'src': '../assets/images/slider/1.png',
+      'srcset': '../assets/images/slider/1@2x.png',
+      'padding': '',
+      'logo': false,
+      'height': 543
+    },
+    {
+      'title': 'Nuestros Eat App-Aliados <br> están comprometidos <br> con tu salud y seguridad',
+      'src': '../assets/images/slider/2.png',
+      'srcset': '../assets/images/slider/2@2x.png',
+      'padding': 'pt-5',
+      'logo': false,
+      'height': 400
+    },
+    {
+      'title': 'Llegamos <br> para servir',
+      'src': '../assets/images/slider/3.png',
+      'srcset': '../assets/images/slider/3@2x.png',
+      'padding': 'pt-1.px-4',
+      'logo': true,
+      'height': 450
+    }
+  ]
+
+section.bg-red.text-white
+  .container
+    .position-relative
+      .cycle-slideshow(
+        data-cycle-swipe="true", 
+        data-cycle-fx="scrollHorz", 
+        data-cycle-slides=".slider-item", 
+        data-cycle-timeout="5500", 
+        data-cycle-pager=".slider-pager")
+        
+        each slider in sliders
+          .slider-item.pt-5
+            .row.align-items-center(class=slider.padding)
+              .col-lg-6
+
+                -if (slider.logo === true)
+                  .mb-4
+                    img(
+                      src="../assets/images/logo-black.png" 
+                      srcset="../assets/images/logo-black@2x.png" 
+                      height="200" 
+                      alt="Logo Eat App! Alternativo"
+                    ).mx-auto.d-block
+                
+                .h3.text-center.font-md-h1.mb-4.mb-lg-0(class={"text-lg-left": !slider.logo})
+                  | !{slider.title}
+
+              .col-lg-6
+                img(
+                  src=slider.src 
+                  srcset=slider.srcset 
+                  height=slider.height 
+                  alt=(slider.title.replace(/<br\s*\/?>/gi,''))
+                ).mx-auto.d-block.w-max-100
+
+      .slider-pager

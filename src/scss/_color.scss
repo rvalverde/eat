@@ -1,0 +1,26 @@
+.text {
+  &-black,
+  &-black:hover {
+    color: var(--black) !important; // sass-lint:disable-line no-important
+  }
+
+  &-gray,
+  &-gray:hover {
+    color: var(--gray) !important; // sass-lint:disable-line no-important
+  }
+
+  &-red,
+  &-red:hover {
+    color: var(--red) !important; // sass-lint:disable-line no-important
+  }
+
+  &-gray-200,
+  &-gray-200:hover {
+    color: var(--gray-200);
+  }
+
+  &-gray-300,
+  &-gray-300:hover {
+    color: var(--gray-300);
+  }
+}

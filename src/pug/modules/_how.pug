@@ -1,0 +1,42 @@
+-
+  const items = [
+    {
+      'class': 'img-search',
+      'title': 'Busca',
+      'description': 'El restaurante de tu <br> preferencia en la <br> zona más cercana'
+    },
+    {
+      'class': 'img-selection',
+      'title': 'Selecciona',
+      'description': 'El menú deseado y <br> realiza tu pedido en <br> pocos pasos'
+    },
+    {
+      'class': 'img-monitoring',
+      'title': 'Monitorea',
+      'description': 'El pedido realizado y <br> los datos de tu <br> repartidor'
+    },
+    {
+      'class': 'img-user',
+      'title': 'Prepárate',
+      'description': 'Para recoger <br> o recibir <br> tu pedido'
+    },
+    {
+      'class': 'img-receives',
+      'title': 'Recibe',
+      'description': 'Tu pedido y califica <br> la atención <br> del servicio'
+    }
+  ]
+  
+section.py-5
+  .container.text-center.py-3.py-lg-5
+    h2.mb-5.text-red.font-md-h1 
+      | ¿Cómo funciona?
+
+    .d-sm-flex.flex-wrap.pt-3.pt-lg-5.justify-content-center
+
+      each item in items
+        .w-sm-50.w-md-20.mb-5.mb-lg-0
+          .mx-auto.mb-4(class=item.class)
+
+          h3.font-h5.mb-3.font-weight-normal !{item.title}
+          p !{item.description}

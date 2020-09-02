@@ -1,0 +1,63 @@
+-
+  const lists = [
+    {
+      'title': 'Recojo en tienda <br> o Delivery” “EMPIEZA ¡YA!',
+      'description': 'Los restaurantes una vez puestos sus menús en AZU! ya pueden empezar a funcionar en la modalidad “Paso a Recogerlo” o “Delivery”.',
+      'src': '../assets/images/benefits/business/1.png',
+      'srcset': '../assets/images/benefits/business/1@2x.png',
+      'height': 250
+    },
+    {
+      'title': 'Más pedidos! <br> Más clientes!',
+      'description': 'AZU! te permite tomar y procesar una mayor cantidad de pedidos de diferentes clientes al mismo tiempo, en contraste a la manera tradicional en el que solo se puede tomar una orden. Con AZU! no perderás ningún cliente por estar esperando en línea o porque el telefono siempre suena ocupado.',
+      'src': '../assets/images/benefits/business/2.png',
+      'srcset': '../assets/images/benefits/business/2@2x.png',
+      'height': 280
+    },
+    {
+      'title': 'Pedidos con <br> anticipación',
+      'description': 'Este beneficio es importante porque puede tener las ordenes hechas con horas de anticipación y el cliente elige a qué hora va a pasar a recoger su comida. Ejemplo: llega una orden a las 11am de 4 lomos saltados y 2 carapulcras para ser recogido a la 2 de la tarde.',
+      'src': '../assets/images/benefits/business/3.png',
+      'srcset': '../assets/images/benefits/business/3@2x.png',
+      'height': 260
+    },
+    {
+      'title': 'Automatiza procesos y <br> ¡Gana un empleado!',
+      'description': 'Con AZU! los pedidos aparecen listos y completos en la pantalla de tu celular. Como verás es mejor tener al empleado ayudando en otras funciones del restaurante. ¡Automatiza los procesos de tus pedidos y deja que AZU! tome las órdenes por ti!',
+      'src': '../assets/images/benefits/business/4.png',
+      'srcset': '../assets/images/benefits/business/4@2x.png',
+      'height': 330
+    },
+    {
+      'title': 'Aumenta el <br> aforo de tu local',
+      'description': 'Ya que los clientes solo vienen a recoger las órdenes que ya están listas esto ayuda a que el restaurante no tenga muchas personas esperando dentro o fuera del local.',
+      'src': '../assets/images/benefits/business/5.png',
+      'srcset': '../assets/images/benefits/business/5@2x.png',
+      'height': 300
+    },
+    {
+      'title': 'Usuario y AZU-Aliado <br> protegidos e informados',
+      'description': 'AZU! informará al usuario la obligación de usar “Mascarilla” al momento de “Recibir” su pedido. Y que de no contar con ella no podrá ser entregado hasta cumplir con esta disposición.',
+      'src': '../assets/images/benefits/clients/7.png',
+      'srcset': '../assets/images/benefits/clients/7@2x.png',
+      'height': 300
+    }
+  ]
+
+section#benefits.bg-red.text-white.py-5
+  .container.py-lg-5
+    .d-md-flex.justify-content-center.mb-5.pb-3.align-items-center
+      h2.font-h3.font-md-h2.font-md-h1.text-center.mb-0.mr-md-3 
+        | Beneficios de afiliar <br> tu comercio con
+
+      .mt-3.mt-md-0
+        img(
+          src="../assets/images/logo-black.png" 
+          srcset="../assets/images/logo-black@2x.png" 
+          height="120" 
+          alt="Logo AZU! Alternativo"
+        ).mx-auto.d-block.mx-lg-0
+
+    .row.justify-content-center.text-center.text-md-left
+      .col-lg-11
+        include ../general/_benefit

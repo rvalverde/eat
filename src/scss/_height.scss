@@ -1,0 +1,15 @@
+.h {
+  &-px-200 {
+    height: 200px;
+  }
+
+  &-px-55 {
+    height: 55px;
+  }
+
+  @media (min-width: 991px) {
+    &-px-lg-75 {
+      height: 85px;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.slider {
+  &-item {
+    display: none;
+    width: 100%;
+
+    &:first-child {
+      display: block;
+    }
+  }
+
+  &-pager {
+    bottom: 20px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 100;
+
+    span {
+      background-color: var(--white);
+      border-radius: 50%;
+      cursor: pointer;
+      display: inline-block;
+      height: 10px;
+      margin: 0 10px;
+      text-indent: -9999em;
+      vertical-align: middle;
+      width: 10px;
+
+      &.cycle-pager-active {
+        background-color: transparent;
+        border: 2px solid var(--white);
+        height: 13px;
+        width: 13px;
+      }
+    }
+  }
+}

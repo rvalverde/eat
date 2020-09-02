@@ -1,0 +1,34 @@
+@mixin root-prop($prop: null, $value: null) {
+  @if ($prop and $value) {
+    #{$prop}: $value;
+  }
+}
+
+$images-path: '../assets/images/';
+$font-path: '../assets/fonts/';
+$icon-font-family: 'icomoon';
+$instagram: '#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d';
+$black-600: 'rgba(33, 33, 33, 0.6)';
+
+:root {
+  @include root-prop(--black, #000);
+  @include root-prop(--white, #fff);
+  @include root-prop(--gray, #eee);
+  @include root-prop(--gray-200, #999);
+  @include root-prop(--gray-300, #808080);
+  @include root-prop(--gray-400, #555);
+  @include root-prop(--gray-500, #888);
+  @include root-prop(--red, #e30613);
+  @include root-prop(--red-200, #0a0a0a);
+  @include root-prop(--red-300, #ec7e7e);
+  @include root-prop(--orange, #ff9c9c);
+  @include root-prop(--orange-200, #ffc700);
+  @include root-prop(--blue, #3b5998);
+  @include root-prop(--blue-200, #366bda);
+  @include root-prop(--blue-300, #327dee);
+  @include root-prop(--green, #25d366);
+  @include root-prop(--green-200, #0e76a8);
+  @include root-prop(--green-300, #159ee0);
+  @include root-prop(--green-400, #00acee);
+  @include root-prop(--green-500, #33c6ff);
+}

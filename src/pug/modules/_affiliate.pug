@@ -1,0 +1,40 @@
+section.py-3.py-md-5
+  .container.py-3
+    .row.align-items-center
+      .col-lg-6
+        h2.mb-4.font-md-h1 
+          | ¿Quieres ser afiliado?
+        p 
+          | Con Eat App! puedes incrementar tus ventas. Únete a nosotros y permite a tus clientes hacer sus pedidos desde sus celulares. Déjanos tus datos y te contactaremos a la brevedad posible o comunicate al <i class="icon-whatsapp text-red pt-1"></i> <a href="tel:999888777">999 888 777</a>.
+
+        form
+          .form-group.mb-4
+            label(for="form-name").sr-only Nombre y apellidos
+            input(type="text" id="form-name" placeholder="Nombre y apellidos").form-control
+          
+          .form-group.mb-4
+            label(for="form-company").sr-only Nombre de empresa o local
+            input(type="text" id="form-company" placeholder="Nombre de empresa o local").form-control
+          
+          .form-row
+            .form-group.col-sm-6.mb-4
+              label(for="form-number").sr-only Teléfono
+              input(type="number" id="form-number" placeholder="Teléfono").form-control
+            
+            .form-group.col-sm-6.mb-4
+              label(for="form-email").sr-only Correo electrónico
+              input(type="email" id="form-email" placeholder="Correo electrónico").form-control
+          
+          .form-group.mb-4
+            label(for="form-message").sr-only Mensaje
+            textarea(id="form-message" placeholder="Mensaje").form-control.h-px-200
+
+          button(type="submit").btn Enviar mensaje
+      
+      .col-lg-6.mt-5.mt-lg-0.d-none.d-lg-block
+        img(
+          src="../assets/images/food.png" 
+          srcset="../assets/images/food@2x.png" 
+          height="400" 
+          alt="App Food"
+        ).mx-auto.d-block.w-max-100

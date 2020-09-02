@@ -1,0 +1,20 @@
+each benefit, i in lists
+  .row.py-4.align-items-center.mb-4.mb-md-0(class={"flex-row-reverse": i % 2 == 0})
+    .col-md-6
+      h3.mb-4 !{benefit.title}
+
+      if benefit.items
+        ul
+          each item in benefit.items
+            li= item
+
+      if benefit.description
+        p.mb-0 #{benefit.description}
+        
+    .col-md-6.mt-5.mt-md-0.px-5.px-md-0
+      img(
+        src=benefit.src 
+        srcset=benefit.srcset 
+        height=benefit.height 
+        alt=(benefit.title.replace(/<br\s*\/?>/gi,''))
+      ).mx-auto.d-block.w-max-100

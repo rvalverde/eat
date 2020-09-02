@@ -1,0 +1,16 @@
+.border-top {
+  &.bc-white {
+    border-color: var(--white) !important; // sass-lint:disable-line no-important
+  }
+
+  &.bc-red {
+    border-color: var(--orange) !important; // sass-lint:disable-line no-important
+  }
+}
+
+.border-radius-50 {
+  border: 5px solid var(--red-300);
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+}

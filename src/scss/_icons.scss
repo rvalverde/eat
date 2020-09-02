@@ -1,0 +1,106 @@
+// sass-lint:disable-all
+
+@font-face {
+  font-family: $icon-font-family;
+  src: url('#{$font-path}/icomoon.eot');
+  src:
+    url('#{$font-path}/icomoon.eot#iefix') format('embedded-opentype'),
+    url('#{$font-path}/icomoon.ttf') format('truetype'),
+    url('#{$font-path}/icomoon.woff') format('woff'),
+    url('#{$font-path}/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: $icon-font-family !important;
+  speak-as: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// sass-lint:enable-all
+
+.icon {
+  &-arrow-down {
+    &::before {
+      content: '\e900';
+    }
+  }
+
+  &-close {
+    &::before {
+      content: '\e901';
+    }
+  }
+
+  &-email-out {
+    &::before {
+      content: '\e902';
+    }
+  }
+
+  &-email {
+    &::before {
+      content: '\e903';
+    }
+  }
+
+  &-facebook {
+    &::before {
+      content: '\e904';
+    }
+  }
+
+  &-linkedin {
+    &::before {
+      content: '\e905';
+    }
+  }
+
+  &-menu {
+    &::before {
+      content: '\e906';
+    }
+  }
+
+  &-whatsapp {
+    &::before {
+      content: '\e907';
+    }
+  }
+
+  &-youtube {
+    &::before {
+      content: '\e908';
+    }
+  }
+
+  &-instagram {
+    &::before {
+      content: '\e909';
+    }
+  }
+
+  &-twitter {
+    &::before {
+      content: '\e90a';
+    }
+  }
+
+  &-external {
+    &::before {
+      content: '\e90b';
+    }
+  }
+}

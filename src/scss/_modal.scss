@@ -1,0 +1,45 @@
+.smodal {
+  background-color: $black-600;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 103;
+
+  &-wrapper {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding: 25px;
+  }
+
+  &-close {
+    align-items: center;
+    background-color: var(--black);
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--gray-200);
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 30px;
+  }
+
+  &-content {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--gray-200);
+    font-size: 1.15rem;
+    max-width: 500px;
+    padding: 40px;
+    position: relative;
+    text-align: center;
+  }
+}

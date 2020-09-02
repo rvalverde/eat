@@ -1,0 +1,98 @@
+// sass-lint:disable-all
+.circle {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 50%;
+  color: var(--white);
+  display: flex;
+  font-size: 22px;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+
+  &:hover {
+    color: var(--white);
+  }
+
+  .icon {
+    &-facebook {
+      &:hover {
+        background-color: var(--blue);
+      }
+    }
+
+    &-linkedin {
+      &:hover {
+        background-color: var(--green-200);
+      }
+    }
+
+    &-twitter {
+      &:hover {
+        background-color: var(--green-400);
+      }
+    }
+
+    &-whatsapp {
+      &:hover {
+        background-color: var(--green);
+      }
+    }
+
+    &-instagram {
+      &:hover {
+        background: linear-gradient(45deg, $instagram);
+      }
+    }
+
+    &-external {
+      &:hover {
+        background-color: var(--blue-300);
+      }
+    }
+
+    .circle-out {
+      .icon-external {
+        background-color: var(--blue-300);
+      }
+    }
+  }
+
+  &-out {
+    .icon {
+      &-facebook {
+        background-color: var(--blue);
+
+        &:hover {
+          background-color: var(--blue-200);
+        }
+      }
+
+      &-linkedin {
+        background-color: var(--green-200);
+        font-size: 18px;
+
+        &:hover {
+          background-color: var(--green-300);
+        }
+      }
+
+      &-twitter {
+        background-color: var(--green-400);
+
+        &:hover {
+          background-color: var(--green-500);
+        }
+      }
+
+      &-whatsapp {
+        background-color: var(--green);
+      }
+
+      &-instagram {
+        background: linear-gradient(45deg, $instagram);
+      }
+    }
+  }
+}
+// sass-lint:enable-all

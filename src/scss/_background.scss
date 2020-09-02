@@ -1,0 +1,13 @@
+.bg {
+  &-black {
+    background-color: var(--black) !important; // sass-lint:disable-line no-important
+  }
+
+  &-gray {
+    background-color: var(--gray) !important; // sass-lint:disable-line no-important
+  }
+
+  &-red {
+    background-color: var(--red) !important; // sass-lint:disable-line no-important
+  }
+}

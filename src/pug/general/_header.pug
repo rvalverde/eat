@@ -1,0 +1,93 @@
+header.bg-red.fixed
+  .container.d-flex.justify-content-between.align-items-center.h-px-55.h-px-lg-75
+    .logo.position-relative
+      a(href="index.html")
+        img(
+          src="../assets/images/logo.png" 
+          srcset="../assets/images/logo@2x.png" 
+          height="36" 
+          alt="Logo Eat App!")
+
+    .d-none.d-lg-block
+      ul.list-unstyled.d-flex.align-items-center.m-0.menu
+        li.menu-item.active
+          a(href="index.html").none 
+            | Inicio
+
+        li.menu-item
+          a(href="about.html").none 
+            | Quiénes Somos
+
+        li.menu-item
+          a(href="affiliates.html").none 
+            | Afíliate
+
+        li.menu-item
+          a(href="contact-us.html").none.contactus 
+            | Contáctanos
+
+        li.ml-4
+          a(href="#").btn.bg-white.text-red 
+            | Descarga App
+
+    .d-lg-none.d-flex.align-items-center
+      .mr-3.menu-app
+        a(href="index.html").btn.btn-small.bg-white.text-red 
+          | Descarga App
+
+      .text-white.font-h2.mb-0.line-0.menu-click.cursor-pointer
+        i.icon-menu
+        i.icon-close.d-none
+
+.bg-red.text-white.p-4.responsive
+  .mb-5
+    ul.list-unstyled
+      li.my-3font-h5
+        a(href="index.html").text-white.font-weight-normal 
+          | Inicio
+
+      li.my-3font-h5
+        a(href="nosotros.html").text-white.font-weight-normal 
+          | ¿Quiénes somos?
+
+      li.my-3font-h5
+        a(href="afiliate.html").text-white.font-weight-normal 
+          | Afíliate
+
+  h3.font-h6.font-weight-normal.mb-3 
+    | Contáctenos
+
+  .d-inline-block.d-lg-flex.justify-content-center.justify-content-lg-start.mb-5
+    .d-flex.align-items-center.mb-2.h6.font-weight-normal.mr-4
+      i.icon-email-out.mr-2
+      a(href="#").text-white.none 
+        | info@eatapp.com
+
+    .d-flex.align-items-center.h6.m-0.font-weight-normal
+      i.icon-whatsapp.mr-2
+      a(href="tel:999888777").text-white.none 
+        | 999 888 777
+
+  h3.font-h6.font-weight-normal.mb-3 
+    | Descargue la aplicación
+
+  .d-flex
+    .mr-3
+      a(href="#").cursor-pointer
+        span.img-apple-small
+    div
+      a(href="#").cursor-pointer
+        span.img-android-small
+
+  .d-flex.justify-content-center.border-top.bc-white.pt-4.mt-4
+    .ml-n2.mr-2
+      a(href="#" target="_blank" title="Facebook").none
+        i.icon-facebook.circle
+
+    .mx-2
+      a(href="#" target="_blank" title="Twitter").none
+        i.icon-twitter.circle
+        
+    .mx-2
+      a(href="#" target="_blank" title="Instagram").none
+        i.icon-instagram.circle

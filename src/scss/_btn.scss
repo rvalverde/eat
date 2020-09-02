@@ -1,0 +1,36 @@
+.btn {
+  align-items: center;
+  background-color: var(--red);
+  border-color: var(--red);
+  border-radius: 2rem;
+  color: var(--white);
+  display: flex;
+  font-weight: 600;
+  height: 40px;
+  padding-bottom: 0 !important; // sass-lint:disable-line no-important
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0 !important; // sass-lint:disable-line no-important
+
+  &:hover {
+    background-color: var(--red-200);
+    border-color: var(--red-200);
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  &.btn-small {
+    font-size: 0.875rem;
+  }
+
+  &.bg-white {
+    border-width: 2px;
+
+    &:hover {
+      background-color: var(--red) !important; // sass-lint:disable-line no-important
+      border-color: var(--white) !important; // sass-lint:disable-line no-important
+      color: var(--white) !important; // sass-lint:disable-line no-important
+      text-decoration: none;
+    }
+  }
+}
